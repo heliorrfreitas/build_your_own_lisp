@@ -1,0 +1,73 @@
+TODO - Change this from the format txt to the format .md and customize
+
+Notes
+To compile the C project using the command line on my computer(which is already set up to do so).
+
+cc -std=c99 -Wall hello_world.c -o hello_world
+
+The -std= part of the command specifies the version or standard of C we are programming with.
+This lets the compiler ensure our code is standarised, so that people with different operating systems or compiler will be able to use the code.
+The c99 is the verison specified.
+
+-o means to place the output into file.
+
+-Wall this commands stands for warn all. It turns on almost all the warning of gcc. 
+link: https://stackoverflow.com/questions/2408038/what-does-wall-in-g-wall-test-cpp-o-test-do
+
+we can learn a lot more using the command man gcc which shows the manual for the compiler.
+
+
+
+Questions
+-What happens when no main function is given?
+If the c file does not have a main function, it return an error. The error I got was the following:
+
+/usr/bin/ld: /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+
+It does not compile the c program.
+
+
+-Use the online documentation to lookup the puts function.
+you can use the command man puts, this code will display the manual for the command puts.
+
+It says that it is the Linux Programmer's manual.
+
+The puts command outputs characteres and strings, plus it adds a new line to the output. 
+
+
+
+-What is gdb? 
+GDB is the GNU project debugger. It allows us to debug a program.
+
+I ran gdb hello_world to execute. Nothing happened at first and it said it didn't find any gdb symbols.
+
+Then I compiled again the c program. This time however I used the following command:
+
+cc -std=c99 -Wall -g hello_world.c -o hello_world
+
+Then, I ran the command gdb hello_world
+
+This time it found the gdb symbol, this happened because I used the -g in the command.The -g command enables GDB debugging.
+
+I add a breaking point using the command b 4.
+
+and ran the debugger using the command run.
+
+The output was the following: 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffd488) at hello_world.c:4
+4		puts("Hello, world! Sucess");
+
+Then, I ran the command next. The output was the following:
+
+Hello, world! Sucess
+5		return 0;
+
+
+To exit the debugger use the command quit.
+
+
+link what it is: https://www.gnu.org/software/gdb/
+link how to: https://cs.baylor.edu/~donahoo/tools/gdb/tutorial.html
