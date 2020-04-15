@@ -1,0 +1,33 @@
+Notes
+
+Struct definition
+structures are used to create new types. Structures are several variables bundled together into a single package.
+
+typedef struct {
+	float x;
+	float y;
+} point;
+
+In the example above it was created a structure that has two variables(x and y). The name of this new type is point.
+
+To use the new structure use the commands below:
+
+point p;
+p.x = 10.1;
+p.y = 5.0;
+
+-----------
+
+
+› Use a for loop to print out Hello World! five times.
+› Use a while loop to print out Hello World! five times.
+› Declare a function that outputs Hello World! n number of times. Call this from main.
+› What built in types are there other than the ones listed?
+› What other conditional operators are there other than greater than >, and less than <?
+› What other mathematical operators are there other than add +, and subtract -?
+› What is the += operator, and how does it work?
+› What is the do loop, and how does it work?
+› What is the switch statement and how does it work?
+› What is the break keyword and what does it do?
+› What is the continue keyword and what does it do?
+› What does the typedef keyword do exactly?
