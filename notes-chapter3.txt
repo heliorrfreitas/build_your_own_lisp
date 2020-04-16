@@ -22,12 +22,59 @@ p.y = 5.0;
 › Use a for loop to print out Hello World! five times.
 › Use a while loop to print out Hello World! five times.
 › Declare a function that outputs Hello World! n number of times. Call this from main.
+
 › What built in types are there other than the ones listed?
+	In the chapter the following built in types were listed: void, char, int, long, float, and double.
+	We can modify these types using the following modifiers: signed, unsigned, short, long
+	https://en.wikipedia.org/wiki/C_data_types#Main_types
+
+
 › What other conditional operators are there other than greater than >, and less than <?
+	>= 	greater than or equal to
+	<=	less than or equal to
+	==	equal to
+	!=	different of
+
 › What other mathematical operators are there other than add +, and subtract -?
+	*	multiplication
+	/	division
+	%	modulus
+	^	to the power of
+
+	The operators below always do the their respective operation using the left operand and the right operand, the result is assigned to the left operand. Example,
+	int a = 1;
+	int b = 2;
+	a += b is the same as a = a + b
+
+	+= 	
+	-=	it is used to subtract the left operand off the right operand and assign the result to the left operand.
+	*=	it is used to multiply the left operand and the right operand and assign the result to the left operand.
+	/=
+	%=
+	^= 
+	
+
 › What is the += operator, and how does it work?
+	this one is used to add the left operand and the right operand and assign the result to the left operand.
+
 › What is the do loop, and how does it work?
+	the do while loop executes at least once. Then, it verifies the condition, if the condition is not satified it ends. 
+
 › What is the switch statement and how does it work?
+	The switch statement gets a value that is integral or an enumerated type.
+
+	Then it evalutes this value and take to the case which 
+
 › What is the break keyword and what does it do?
 › What is the continue keyword and what does it do?
 › What does the typedef keyword do exactly?
+
+
+
+
+
+
+
+
+
+
