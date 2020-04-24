@@ -61,14 +61,17 @@ p.y = 5.0;
 	the do while loop executes at least once. Then, it verifies the condition, if the condition is not satified it ends. 
 
 › What is the switch statement and how does it work?
-	The switch statement gets a value that is integral or an enumerated type.
-
-	Then it evalutes this value and take to the case which 
+	The switch statement is a control statement. This keyword has some rules when applied, fist it only can be used when the expression yields an integer value. Also, each case must be unique. Inside the case statement any C code can be added. A break statement is used inserted at the end of each case statement. Finally, the statement default can be added in case any other case is met.
 
 › What is the break keyword and what does it do?
-› What is the continue keyword and what does it do?
-› What does the typedef keyword do exactly?
+	The break keyword is a reserved word in C programming. Also,	the break keyword forces the loop to end. 
 
+› What is the continue keyword and what does it do?
+	The continue keyword is another reserved word of the C programming language. In addition, the continue keyword forces the loop to jump to the next iteration, it also skips any other code that was left.
+
+› What does the typedef keyword do exactly?
+	The typedef keyword is used to assign different names to existing datatypes. It is more used with user defined datatypes/.
+	https://www.studytonight.com/c/typedef.php
 
 
 
